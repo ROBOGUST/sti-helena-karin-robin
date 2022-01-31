@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>sti-helena-karin-robin-domain</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
 
 </project>
