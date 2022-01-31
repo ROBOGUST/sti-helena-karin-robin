@@ -33,6 +33,7 @@
     <modules>
         <module>sti-helena-karin-robin-domain</module>
         <module>sti-helena-karin-robin-service</module>
+        <module>sti-helena-karin-robin-service-impl</module>
 
 
     </modules>

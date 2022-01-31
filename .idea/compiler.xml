@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sti-helena-karin-robin-service" />
+        <module name="sti-helena-karin-robin-service-impl" />
         <module name="sti-helena-karin-robin-domain" />
       </profile>
     </annotationProcessing>
@@ -14,6 +15,7 @@
       <module name="sti-helena-karin-robin" target="8" />
       <module name="sti-helena-karin-robin-domain" target="1.8" />
       <module name="sti-helena-karin-robin-service" target="1.8" />
+      <module name="sti-helena-karin-robin-service-impl" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
