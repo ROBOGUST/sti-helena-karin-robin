@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/sti-helena-karin-robin.iml" filepath="$PROJECT_DIR$/.idea/sti-helena-karin-robin.iml" />
       <module fileurl="file://$PROJECT_DIR$/sti-helena-karin-robin-domain/sti-helena-karin-robin-domain.iml" filepath="$PROJECT_DIR$/sti-helena-karin-robin-domain/sti-helena-karin-robin-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sti-helena-karin-robin-service/sti-helena-karin-robin-service.iml" filepath="$PROJECT_DIR$/sti-helena-karin-robin-service/sti-helena-karin-robin-service.iml" />
     </modules>
   </component>
 </project>
