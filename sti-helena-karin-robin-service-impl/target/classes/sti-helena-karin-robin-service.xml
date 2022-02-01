@@ -6,4 +6,5 @@
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="service" class="sti.helena.karin.robin.service.impl.StiServiceImpl"/>
+    <!-- constructor arg=dao osv... -->
 </beans>
