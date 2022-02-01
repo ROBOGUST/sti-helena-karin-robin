@@ -1,4 +1,4 @@
 package sti.helena.karin.robin.service;
 
-public interface stiService {
+public interface StiService {
 }
