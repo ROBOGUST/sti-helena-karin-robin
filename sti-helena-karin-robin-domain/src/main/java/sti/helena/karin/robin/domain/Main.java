@@ -9,8 +9,20 @@ import java.util.logging.Level;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Ange personnummer för eleven");
-        Scanner input = new Scanner(System.in);
+        ArrayList<Student> student = new ArrayList<>();
+
+        student.add(Vault.student1);
+        student.add(Vault.student2);
+        student.add(Vault.student3);
+
+        for(Student x : student){
+            System.out.println(x);
+        }
+
+       // System.out.println("Ange personnummer för eleven");
+       // Scanner input = new Scanner(System.in);
+
+
 
 
         try{
