@@ -8,12 +8,10 @@ public class Student extends Human{
     int courseId;
     String courseName;
 
-    public Student(String givenName, String surName, String personalId, int courseId){
+    public Student(String givenName, String surName, String personalId){
         this.givenName=givenName;
         this.surName=surName;
         this.personalId= personalId;
-        this.courseId=courseId;
-
     }
 
     public String getGivenName() {
