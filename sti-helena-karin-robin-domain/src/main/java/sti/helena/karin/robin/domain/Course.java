@@ -6,4 +6,6 @@ public class Course {
     int courseId;
     int courseHours;
     String courseName;
+
+
 }
