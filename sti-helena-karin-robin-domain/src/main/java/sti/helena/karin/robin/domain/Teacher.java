@@ -15,6 +15,30 @@ public class Teacher extends Human {
         this.surName = surName;
         this.personalId = personalId;
     }
+
+    public String getGivenName() {
+        return givenName;
+    }
+
+    public void setGivenName(String givenName) {
+        this.givenName = givenName;
+    }
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
+    }
+
+    public long getPersonalId() {
+        return personalId;
+    }
+
+    public void setPersonalId(long personalId) {
+        this.personalId = personalId;
+    }
 }
 
 
