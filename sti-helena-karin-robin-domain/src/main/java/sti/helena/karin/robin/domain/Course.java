@@ -5,5 +5,5 @@ public class Course {
     int teacherId;
     int courseId;
     int courseHours;
-
+    String courseName;
 }
