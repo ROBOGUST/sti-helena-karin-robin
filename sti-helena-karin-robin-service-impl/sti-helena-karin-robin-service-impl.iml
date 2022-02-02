@@ -11,5 +11,12 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="sti-helena-karin-robin-service" />
+    <orderEntry type="module" module-name="sti-helena-karin-robin-domain" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.15" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.15" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.15" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.3.15" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.15" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.15" level="project" />
   </component>
 </module>
