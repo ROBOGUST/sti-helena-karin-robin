@@ -1,4 +1,4 @@
-package sti.helena.karin.robin.service;
+package sti.helena.karin.robin.service.impl;
 import java.util.ArrayList;
 
 import org.springframework.context.ApplicationContext;
@@ -6,6 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import sti.helena.karin.robin.domain.Student;
 import sti.helena.karin.robin.domain.Vault;
 import sti.helena.karin.robin.service.Logg;
+import sti.helena.karin.robin.service.StiService;
 
 import java.io.IOException;
 import java.util.Scanner;

@@ -9,7 +9,7 @@ public class StiServiceImpl implements StiService {
 
     @Override
     public Student getStudent(String pnr) {
-        return null;
+        return vault.getStudent(pnr);
     }
 
     //Dao dao;

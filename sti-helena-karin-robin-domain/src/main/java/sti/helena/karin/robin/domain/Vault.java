@@ -35,7 +35,8 @@ public class Vault {
     public Student getStudent(String pnr){
         for(Student s: students ){
             long personalId = s.getPersonalId();
-            String idString = personalId+"".substring(0, 12);
+            String idString = personalId+"";
+            idString = idString.substring(0,12);
             if(idString.equals(pnr)){
                return s;
             }
