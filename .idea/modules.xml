@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/sti-helena-karin-robin.iml" filepath="$PROJECT_DIR$/.idea/sti-helena-karin-robin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sti-helena-karin-robin-dao/sti-helena-karin-robin-dao.iml" filepath="$PROJECT_DIR$/sti-helena-karin-robin-dao/sti-helena-karin-robin-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sti-helena-karin-robin-dao-impl/sti-helena-karin-robin-dao-impl.iml" filepath="$PROJECT_DIR$/sti-helena-karin-robin-dao-impl/sti-helena-karin-robin-dao-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/sti-helena-karin-robin-domain/sti-helena-karin-robin-domain.iml" filepath="$PROJECT_DIR$/sti-helena-karin-robin-domain/sti-helena-karin-robin-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/sti-helena-karin-robin-service/sti-helena-karin-robin-service.iml" filepath="$PROJECT_DIR$/sti-helena-karin-robin-service/sti-helena-karin-robin-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/sti-helena-karin-robin-service-impl/sti-helena-karin-robin-service-impl.iml" filepath="$PROJECT_DIR$/sti-helena-karin-robin-service-impl/sti-helena-karin-robin-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sti-helena-karin-robin-test/sti-helena-karin-robin-test.iml" filepath="$PROJECT_DIR$/sti-helena-karin-robin-test/sti-helena-karin-robin-test.iml" />
     </modules>
   </component>
 </project>

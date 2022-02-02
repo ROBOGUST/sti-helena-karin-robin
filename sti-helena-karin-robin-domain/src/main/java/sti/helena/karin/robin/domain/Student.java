@@ -3,17 +3,15 @@ package sti.helena.karin.robin.domain;
 public class Student extends Human{
     private String givenName;
     private String surName;
-    private String personalId;
+    private long personalId;
 
     int courseId;
     String courseName;
 
-    public Student(String givenName, String surName, String personalId, int courseId){
+    public Student(String givenName, String surName, long personalId){
         this.givenName=givenName;
         this.surName=surName;
         this.personalId= personalId;
-        this.courseId=courseId;
-
     }
 
     public String getGivenName() {
@@ -32,11 +30,11 @@ public class Student extends Human{
         this.surName = surName;
     }
 
-    public String getPersonalId() {
+    public long getPersonalId() {
         return personalId;
     }
 
-    public void setPersonalId(String personalId) {
+    public void setPersonalId(long personalId) {
         this.personalId = personalId;
     }
 
