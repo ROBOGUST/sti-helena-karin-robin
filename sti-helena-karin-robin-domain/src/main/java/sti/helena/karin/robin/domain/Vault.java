@@ -1,11 +1,12 @@
 package sti.helena.karin.robin.domain;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Vault {
 
-
+    private static List<Student> students = new ArrayList<>();
 
     static Student student1= new Student("Adam", "Svensson", 197304124433L);
     static Student student2= new Student("Klara", "Olsson", 199203273445L);
@@ -19,7 +20,28 @@ public class Vault {
     Teacher teacher2 = new Teacher("Gittan", "Gittanson", 197303126543L);
 
 
+    public Vault(){
+        addAllStudents();
+    }
 
+    private static void addAllStudents(){
+        students.add(student1);
+        students.add(student2);
+        students.add(student3);
+    }
+
+
+
+    public Student getStudent(String pnr){
+        for(Student s: students ){
+            long personalId = s.getPersonalId();
+            String idString = personalId+"".substring(0, 12);
+            if(idString.equals(pnr)){
+               return s;
+            }
+        }
+        return null;
+    }
 
 
 

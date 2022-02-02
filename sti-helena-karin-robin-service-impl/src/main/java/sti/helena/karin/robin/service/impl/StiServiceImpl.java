@@ -1,8 +1,16 @@
 package sti.helena.karin.robin.service.impl;
 
+import sti.helena.karin.robin.domain.Student;
+import sti.helena.karin.robin.domain.Vault;
 import sti.helena.karin.robin.service.StiService;
 
 public class StiServiceImpl implements StiService {
+   private static Vault vault = new Vault();
+
+    @Override
+    public Student getStudent(String pnr) {
+        return null;
+    }
 
     //Dao dao;
 

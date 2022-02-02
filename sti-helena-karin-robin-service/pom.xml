@@ -14,5 +14,21 @@
     <artifactId>sti-helena-karin-robin-service</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-helena-karin-robin-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        
+
+        <!-- spring-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
