@@ -13,5 +13,11 @@
     <artifactId>sti-helena-karin-robin-test</artifactId>
     <packaging>jar</packaging>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
