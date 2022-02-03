@@ -4,13 +4,13 @@ public class Student extends Human{
     private String givenName;
     private String surName;
     private String personalId;
-    private int courseId;
+    private String courseName;
 
-    public Student(String givenName, String surName, String personalId, int courseId){
+    public Student(String givenName, String surName, String personalId, String courseName){
         this.givenName=givenName;
         this.surName=surName;
         this.personalId= personalId;
-        this.courseId= courseId;
+        this.courseName= courseName;
     }
 
     public String getGivenName() {
@@ -37,11 +37,11 @@ public class Student extends Human{
         this.personalId = personalId;
     }
 
-    public int getCourseId() {
-        return courseId;
+    public String getCourseName() {
+        return courseName;
     }
 
-    public void setCourseId(int courseId) {
-        this.courseId = courseId;
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
     }
 }

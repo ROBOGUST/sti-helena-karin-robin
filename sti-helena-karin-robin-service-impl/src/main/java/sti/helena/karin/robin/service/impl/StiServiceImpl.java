@@ -36,7 +36,7 @@ public class StiServiceImpl implements StiService {
 
     @Override
     public Object getStudent() {
-        return null;
+        return students;
     }
 
     //Dao dao;
