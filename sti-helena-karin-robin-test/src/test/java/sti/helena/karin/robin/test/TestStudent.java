@@ -10,50 +10,20 @@ import sti.helena.karin.robin.service.StiService;
 import java.util.List;
 
 
+
+
 public class TestStudent {
-    ApplicationContext applicationContext= new ClassPathXmlApplicationContext("classpath:sti-helena-karin-robin-service.xml");
+   static ApplicationContext applicationContext=
+           new ClassPathXmlApplicationContext("classpath:sti-helena-karin-robin-service.xml");
     private static final String Adam ="Adam";
+
     @Test
     public void givenName(){
         StiService stiService = (StiService)applicationContext.getBean("service");
-        List<String> students = stiService.getStudent();
-        Assert.assertEquals("Adam", students.get(1));
+        Student student= stiService.getStudent("197304124433");
+        Assert.assertEquals("Adam", student.getGivenName());
+        //Assert.assertEquals("Adam", students.get(1));
     }
 
 
 }
-   /* @Test
-    public void testSpringWiring(){
-        ScratchService scratchService = (ScratchService)applicationContext.getBean("service");
-        List<String> students = scratchService.getStudents();
-        Assert.assertEquals(MAX, students.get(1));
-    }*/
-
-/*
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-        import sti.hknn.domain.Student;
-        import sti.hknn.service.StiService;
-
-        import static sti.hknn.domain.Vault.courseList;
-
-public class TestService {
-    ApplicationContext applicationContext= new ClassPathXmlApplicationContext("classpath:sti-hknn-service.xml");
-    private StiService stiService;
-    @Test
-    public void studentConstructorTest() {
-        Student student = new Student("firstName", "lastName", "personalId", courseList, "computer");
-        Assert.assertEquals("firstName", student.getFirstName());
-    }
-
-    @Before
-    public void Before(){
-        stiService = (StiService) applicationContext.getBean("stiService");
-    }
-    @Test
-    public void getStudentTest(){
-        stiService.addStudent("firstName", "lastName", "personalId", courseList, "computer");
-        Student student = stiService.getStudent("personalId");
-        Assert.assertNotNull(student);
-    }
-}*/
