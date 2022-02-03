@@ -8,9 +8,9 @@ public class Vault {
     public static List<Student> students = new ArrayList<>();
     private static List<Course> courses = new ArrayList<>();
 
-    static Student student1= new Student("Adam", "Svensson", "197304124433", 1);
-    static Student student2= new Student("Klara", "Olsson", "199203273445", 2);
-    static Student student3= new Student("Sven", "Svensson", "197302324556", 3);
+    static Student student1= new Student("Adam", "Svensson", "197304124433", "Java A");
+    static Student student2= new Student("Klara", "Olsson", "199203273445", "Databas");
+    static Student student3= new Student("Sven", "Svensson", "197302324556", "Java B");
 
     static Course kurs1= new Course("Java A", 1, 1, 160, 20);
     static Course kurs2= new Course("Databas", 2, 2, 200, 25);
