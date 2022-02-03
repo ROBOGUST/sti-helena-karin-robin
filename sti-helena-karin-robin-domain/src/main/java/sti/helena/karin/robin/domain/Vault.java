@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Vault {
 
-    private static List<Student> students = new ArrayList<>();
+    public static List<Student> students = new ArrayList<>();
     private static List<Course> courses = new ArrayList<>();
 
     static Student student1= new Student("Adam", "Svensson", "197304124433", 1);

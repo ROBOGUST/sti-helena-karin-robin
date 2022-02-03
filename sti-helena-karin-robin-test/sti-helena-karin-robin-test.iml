@@ -19,7 +19,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-jcl:5.3.15" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-expression:5.3.15" level="project" />
     <orderEntry type="module" module-name="sti-helena-karin-robin-domain" scope="TEST" />
-    <orderEntry type="library" scope="TEST" name="Maven: se.sti:sti-helena-karin-robin-service-impl:unknown" level="project" />
+    <orderEntry type="module" module-name="sti-helena-karin-robin-service-impl" scope="TEST" />
     <orderEntry type="module" module-name="sti-helena-karin-robin-service" scope="TEST" />
   </component>
 </module>

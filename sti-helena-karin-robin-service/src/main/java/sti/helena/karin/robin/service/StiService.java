@@ -6,4 +6,6 @@ import sti.helena.karin.robin.domain.Student;
 public interface StiService {
     Student getStudent(String pnr);
     Course getCourseId(int cid);
+
+    Object getStudent();
 }
