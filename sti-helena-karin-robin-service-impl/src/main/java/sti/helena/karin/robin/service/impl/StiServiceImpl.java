@@ -15,7 +15,7 @@ public class StiServiceImpl implements StiService {
 
     @Override
     public Course getCourseId(int cid) {
-        return null;
+        return getCourseId(cid);
     }
 
     //Dao dao;

@@ -23,7 +23,7 @@ public class Course {
     }
 
     public int getCourseId() {
-        return Vault.courseId;
+        return courseId;
     }
 
     public void setCourseId(int courseId) {
