@@ -19,5 +19,27 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-helena-karin-robin-domain</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-helena-karin-robin-service-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-helena-karin-robin-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
