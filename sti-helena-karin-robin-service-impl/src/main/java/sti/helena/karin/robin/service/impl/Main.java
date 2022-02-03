@@ -20,24 +20,17 @@ public class Main {
     private static ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:sti-helena-karin-robin-service.xml");
 
     public static void main(String[] args) {
-
-       /* ArrayList<Student> student = new ArrayList<>();
-
-        student.add(Vault.student1);
-        student.add(Vault.student2);
-        student.add(Vault.student3);
-
-        for(Student x : student){
-            System.out.println(x);
-        }*/
-
-       // System.out.println("Ange personnummer för eleven");
-       // Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         service = (StiService) applicationContext.getBean("service");
 
-        Student student =service.getStudent("197304124433");
-        Course course = service.getCourseId(1);
+        System.out.println("Ange personnummer för eleven");
+        String pNr = input.nextLine();
+        Student student =service.getStudent(pNr);
+
+        System.out.println("Ange kursid (1-3) för eleven");
+        int courseId = input.nextInt();
+        Course course = service.getCourseId(courseId);
 
         System.out.println(student.getGivenName() + " " + student.getSurName() + " " + course.getCourseId());
 
