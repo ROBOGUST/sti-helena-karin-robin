@@ -1,5 +1,6 @@
 package sti.helena.karin.robin.service.impl;
 
+import sti.helena.karin.robin.domain.Course;
 import sti.helena.karin.robin.domain.Student;
 import sti.helena.karin.robin.domain.Vault;
 import sti.helena.karin.robin.service.StiService;
@@ -10,6 +11,11 @@ public class StiServiceImpl implements StiService {
     @Override
     public Student getStudent(String pnr) {
         return vault.getStudent(pnr);
+    }
+
+    @Override
+    public Course getCourseId(int cid) {
+        return null;
     }
 
     //Dao dao;

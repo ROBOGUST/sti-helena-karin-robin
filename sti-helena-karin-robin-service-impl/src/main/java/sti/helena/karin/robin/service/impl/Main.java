@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import sti.helena.karin.robin.domain.Course;
 import sti.helena.karin.robin.domain.Student;
 import sti.helena.karin.robin.domain.Vault;
 import sti.helena.karin.robin.service.Logg;
@@ -36,8 +37,9 @@ public class Main {
         service = (StiService) applicationContext.getBean("service");
 
         Student student =service.getStudent("197304124433");
+        Course course = service.getCourseId(1);
 
-        System.out.println(student.getGivenName());
+        System.out.println(student.getGivenName() + " " + student.getSurName() + " " + course.getCourseId());
 
         /*try{
             Logg mylogg = new Logg("logg.txt");
