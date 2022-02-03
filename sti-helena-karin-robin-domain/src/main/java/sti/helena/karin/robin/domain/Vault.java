@@ -2,15 +2,15 @@ package sti.helena.karin.robin.domain;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Vault {
 
     private static List<Student> students = new ArrayList<>();
+    private static List<Course> courses = new ArrayList<>();
 
-    static Student student1= new Student("Adam", "Svensson", 197304124433L);
-    static Student student2= new Student("Klara", "Olsson", 199203273445L);
-    static Student student3= new Student("Sven", "Svensson", 197302324556L);
+    static Student student1= new Student("Adam", "Svensson", "197304124433", 1);
+    static Student student2= new Student("Klara", "Olsson", "199203273445", 2);
+    static Student student3= new Student("Sven", "Svensson", "197302324556", 3);
 
     Course kurs1= new Course("Java A", 1, 1, 160, 20);
     Course kurs2= new Course("Databas", 2, 2, 200, 25);
@@ -22,6 +22,13 @@ public class Vault {
 
     public Vault(){
         addAllStudents();
+        addAllCourses();
+    }
+
+    private void addAllCourses() {
+        courses.add(kurs1);
+        courses.add(kurs2);
+        courses.add(kurs3);
     }
 
     private static void addAllStudents(){
@@ -30,23 +37,29 @@ public class Vault {
         students.add(student3);
     }
 
-
-
-    public Student getStudent(String pnr){
-        for(Student s: students ){
-            long personalId = s.getPersonalId();
-            String idString = personalId+"";
-            idString = idString.substring(0,12);
-            if(idString.equals(pnr)){
-               return s;
+    public static String getCourseId(int courseId){
+        for (Course c: courses){
+            int id = c.getCourseId();
+            if (id == 1){
+                return "Java A";
+            }
+            if (id == 2){
+                return "Databas";
+            }
+            if (id == 3){
+                return "Java B";
             }
         }
         return null;
     }
 
-
-
-
-
-
+    public Student getStudent(String pnr){
+        for(Student s: students ){
+            String personalId = s.getPersonalId();
+            if(personalId.equals(pnr)){
+               return s;
+            }
+        }
+        return null;
+    }
 }
