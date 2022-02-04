@@ -6,7 +6,7 @@ import java.util.List;
 public class Vault {
 
     public static List<Student> students = new ArrayList<>();
-    private static List<Course> courses = new ArrayList<>();
+    public static List<Course> courses = new ArrayList<>();
 
     static Student student1= new Student("Adam", "Svensson", "197304124433", "Java A");
     static Student student2= new Student("Klara", "Olsson", "199203273445", "Databas");
@@ -62,4 +62,11 @@ public class Vault {
         }
         return null;
     }
+
+    public static Student removeStudent(String pNr){
+        students.removeIf(s -> s.getPersonalId().equals(pNr));
+
+        return null;
+    }
+
 }

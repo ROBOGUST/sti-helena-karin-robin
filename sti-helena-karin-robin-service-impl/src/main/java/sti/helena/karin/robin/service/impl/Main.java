@@ -13,6 +13,8 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.logging.Level;
 
+import static sti.helena.karin.robin.domain.Vault.students;
+
 public class Main {
 
     private static StiService service;
@@ -25,17 +27,26 @@ public class Main {
 
         startMenu();
         int choice = input.nextInt();
+
         if (choice == 1){
             System.out.println("Ange personnummer för eleven");
+            input.nextLine();
             String pNr = input.nextLine();
             Student student =service.getStudent(pNr);
             System.out.println(student.getGivenName() + " " + student.getSurName() + " " + student.getCourseName());
         }
         else if (choice == 2){
-
+            System.out.println("Ange personnummer för eleven");
+            input.nextLine();
+            String pNr = input.nextLine();
+            Student student = service.removeStudent(pNr);
+            System.out.println(students);
         }
         else if (choice == 3){
-
+            System.out.println("Ange kursid (1-3) för eleven");
+            int courseId = input.nextInt();
+            String course = Vault.getCourseId(courseId);
+            System.out.println(course);
         }
         else if (choice == 4){
             System.out.println("Thank you and have a nice day!");
@@ -43,17 +54,6 @@ public class Main {
         else{
             System.out.println("error");
         }
-
-     //   System.out.println("Ange personnummer för eleven");
-     //   String pNr = input.nextLine();
-     //   Student student =service.getStudent(pNr);
-    //    System.out.println(student.getGivenName() + " " + student.getSurName() + " " + student.getCourseName());
-
-
-        //    System.out.println("Ange kursid (1-3) för eleven");
-    //    int courseId = input.nextInt();
-    //    Course course = service.getCourseId(courseId);
-
 
         /*try{
             Logg mylogg = new Logg("logg.txt");
@@ -64,7 +64,7 @@ public class Main {
     public static void startMenu(){
         System.out.println("Welcome to STI, please choose option:");
         System.out.println("1. Select student by personal ID.");
-        System.out.println("2. Add student to school.");
+        System.out.println("2. Delete student by personal ID");
         System.out.println("3. Alter courses for student.");
         System.out.println("4. Quit program.");
     }
